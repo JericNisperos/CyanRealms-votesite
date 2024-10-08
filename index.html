@@ -47,6 +47,7 @@
             border-radius: 5px;
             margin-top: 20px;
             font-weight: bold;
+            cursor: pointer;
         }
         .open-all:hover {
             background-color: #00b8d4;
@@ -58,8 +59,6 @@
     <div class="container">
         <h1>CyanRealms Vote Links</h1>
         <ul id="linkList">
-
-            
             <li><a href="https://minecraftservers.org/server/662729" target="_blank">Minecraft Servers (Vote Link #1)</a></li>
             <li><a href="https://topg.org/minecraft-servers/server-664156" target="_blank">TopG (Vote Link #2)</a></li>
             <li><a href="https://minecraft-mp.com/server-s332590" target="_blank">Minecraft MP (Vote Link #3)</a></li>
@@ -70,14 +69,16 @@
             <li><a href="https://www.planetminecraft.com/server/cyan-realms/vote/" target="_blank">Planet Minecraft (Vote Link #8)</a></li>
             <li><a href="https://mclist.io/server/64883/vote" target="_blank">MCList (Vote Link #9)</a></li>
         </ul>
-        <a href="#" class="open-all" onclick="openAllLinks(); return false;">Open All Vote Links</a>
+        <button class="open-all" onclick="openAllLinks()">Open All Vote Links</button>
     </div>
 
     <script>
         function openAllLinks() {
             const links = document.querySelectorAll('#linkList a');
-            links.forEach(link => {
-                window.open(link.href, '_blank');
+            links.forEach((link, index) => {
+                setTimeout(() => {
+                    window.open(link.href, '_blank');
+                }, index * 500); // Open each link with a 500ms delay
             });
         }
     </script>

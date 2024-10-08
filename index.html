@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyanRealms Vote Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255,255,255,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #ffffff;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #00e5ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .open-all {
+            display: inline-block;
+            background-color: #00e5ff;
+            color: #000000;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .open-all:hover {
+            background-color: #00b8d4;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CyanRealms Vote Links</h1>
+        <ul id="linkList">
+
+            
+            <li><a href="https://minecraftservers.org/server/662729" target="_blank">Minecraft Servers (Vote Link #1)</a></li>
+            <li><a href="https://topg.org/minecraft-servers/server-664156" target="_blank">TopG (Vote Link #2)</a></li>
+            <li><a href="https://minecraft-mp.com/server-s332590" target="_blank">Minecraft MP (Vote Link #3)</a></li>
+            <li><a href="https://minecraft-server.net/details/CyanRealms/" target="_blank">Minecraft Server Net (Vote Link #4)</a></li>
+            <li><a href="https://minecraftpocket-servers.com/server/127808/" target="_blank">Minecraft Pocket Servers (Vote Link #5)</a></li>
+            <li><a href="https://minestatus.net/server/play.cyanrealms.com" target="_blank">MineStatus (Vote Link #6)</a></li>
+            <li><a href="https://minecraft.buzz/server/10845" target="_blank">Minecraft Buzz (Vote Link #7)</a></li>
+            <li><a href="https://www.planetminecraft.com/server/cyan-realms/vote/" target="_blank">Planet Minecraft (Vote Link #8)</a></li>
+            <li><a href="https://mclist.io/server/64883/vote" target="_blank">MCList (Vote Link #9)</a></li>
+        </ul>
+        <a href="#" class="open-all" onclick="openAllLinks(); return false;">Open All Vote Links</a>
+    </div>
+
+    <script>
+        function openAllLinks() {
+            const links = document.querySelectorAll('#linkList a');
+            links.forEach(link => {
+                window.open(link.href, '_blank');
+            });
+        }
+    </script>
+</body>
+</html>
